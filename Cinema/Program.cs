@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Cinema
@@ -20,6 +21,8 @@ namespace Cinema
                 try
                 {
                     Console.WriteLine("Forbindelse oprettet");
+                    Thread.Sleep(3000);
+                    Console.Clear();
                 }
                 catch (Exception ex)
                 {
